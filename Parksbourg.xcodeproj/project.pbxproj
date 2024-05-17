@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF2F61272BF78E260001BBCF /* ParksbourgApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F61262BF78E260001BBCF /* ParksbourgApp.swift */; };
+		FF2F61292BF78E260001BBCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F61282BF78E260001BBCF /* ContentView.swift */; };
+		FF2F612B2BF78E290001BBCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF2F612A2BF78E290001BBCF /* Assets.xcassets */; };
+		FF2F612E2BF78E290001BBCF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF2F612D2BF78E290001BBCF /* Preview Assets.xcassets */; };
+		FF2F61382BF78E290001BBCF /* ParksbourgTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F61372BF78E290001BBCF /* ParksbourgTests.swift */; };
+		FF2F61422BF78E290001BBCF /* ParksbourgUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F61412BF78E290001BBCF /* ParksbourgUITests.swift */; };
+		FF2F61442BF78E290001BBCF /* ParksbourgUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F61432BF78E290001BBCF /* ParksbourgUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF2F61342BF78E290001BBCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF2F611B2BF78E260001BBCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF2F61222BF78E260001BBCF;
+			remoteInfo = Parksbourg;
+		};
+		FF2F613E2BF78E290001BBCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF2F611B2BF78E260001BBCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF2F61222BF78E260001BBCF;
+			remoteInfo = Parksbourg;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF2F61232BF78E260001BBCF /* Parksbourg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parksbourg.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF2F61262BF78E260001BBCF /* ParksbourgApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksbourgApp.swift; sourceTree = "<group>"; };
+		FF2F61282BF78E260001BBCF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FF2F612A2BF78E290001BBCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF2F612D2BF78E290001BBCF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FF2F61332BF78E290001BBCF /* ParksbourgTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParksbourgTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF2F61372BF78E290001BBCF /* ParksbourgTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksbourgTests.swift; sourceTree = "<group>"; };
+		FF2F613D2BF78E290001BBCF /* ParksbourgUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParksbourgUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF2F61412BF78E290001BBCF /* ParksbourgUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksbourgUITests.swift; sourceTree = "<group>"; };
+		FF2F61432BF78E290001BBCF /* ParksbourgUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksbourgUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF2F61202BF78E260001BBCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF2F61302BF78E290001BBCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF2F613A2BF78E290001BBCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF2F611A2BF78E260001BBCF = {
+			isa = PBXGroup;
+			children = (
+				FF2F61252BF78E260001BBCF /* Parksbourg */,
+				FF2F61362BF78E290001BBCF /* ParksbourgTests */,
+				FF2F61402BF78E290001BBCF /* ParksbourgUITests */,
+				FF2F61242BF78E260001BBCF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF2F61242BF78E260001BBCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF2F61232BF78E260001BBCF /* Parksbourg.app */,
+				FF2F61332BF78E290001BBCF /* ParksbourgTests.xctest */,
+				FF2F613D2BF78E290001BBCF /* ParksbourgUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF2F61252BF78E260001BBCF /* Parksbourg */ = {
+			isa = PBXGroup;
+			children = (
+				FF2F61262BF78E260001BBCF /* ParksbourgApp.swift */,
+				FF2F61282BF78E260001BBCF /* ContentView.swift */,
+				FF2F612A2BF78E290001BBCF /* Assets.xcassets */,
+				FF2F612C2BF78E290001BBCF /* Preview Content */,
+			);
+			path = Parksbourg;
+			sourceTree = "<group>";
+		};
+		FF2F612C2BF78E290001BBCF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FF2F612D2BF78E290001BBCF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FF2F61362BF78E290001BBCF /* ParksbourgTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF2F61372BF78E290001BBCF /* ParksbourgTests.swift */,
+			);
+			path = ParksbourgTests;
+			sourceTree = "<group>";
+		};
+		FF2F61402BF78E290001BBCF /* ParksbourgUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF2F61412BF78E290001BBCF /* ParksbourgUITests.swift */,
+				FF2F61432BF78E290001BBCF /* ParksbourgUITestsLaunchTests.swift */,
+			);
+			path = ParksbourgUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF2F61222BF78E260001BBCF /* Parksbourg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF2F61472BF78E290001BBCF /* Build configuration list for PBXNativeTarget "Parksbourg" */;
+			buildPhases = (
+				FF2F611F2BF78E260001BBCF /* Sources */,
+				FF2F61202BF78E260001BBCF /* Frameworks */,
+				FF2F61212BF78E260001BBCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Parksbourg;
+			productName = Parksbourg;
+			productReference = FF2F61232BF78E260001BBCF /* Parksbourg.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF2F61322BF78E290001BBCF /* ParksbourgTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF2F614A2BF78E290001BBCF /* Build configuration list for PBXNativeTarget "ParksbourgTests" */;
+			buildPhases = (
+				FF2F612F2BF78E290001BBCF /* Sources */,
+				FF2F61302BF78E290001BBCF /* Frameworks */,
+				FF2F61312BF78E290001BBCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF2F61352BF78E290001BBCF /* PBXTargetDependency */,
+			);
+			name = ParksbourgTests;
+			productName = ParksbourgTests;
+			productReference = FF2F61332BF78E290001BBCF /* ParksbourgTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF2F613C2BF78E290001BBCF /* ParksbourgUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF2F614D2BF78E290001BBCF /* Build configuration list for PBXNativeTarget "ParksbourgUITests" */;
+			buildPhases = (
+				FF2F61392BF78E290001BBCF /* Sources */,
+				FF2F613A2BF78E290001BBCF /* Frameworks */,
+				FF2F613B2BF78E290001BBCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF2F613F2BF78E290001BBCF /* PBXTargetDependency */,
+			);
+			name = ParksbourgUITests;
+			productName = ParksbourgUITests;
+			productReference = FF2F613D2BF78E290001BBCF /* ParksbourgUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF2F611B2BF78E260001BBCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					FF2F61222BF78E260001BBCF = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					FF2F61322BF78E290001BBCF = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = FF2F61222BF78E260001BBCF;
+					};
+					FF2F613C2BF78E290001BBCF = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = FF2F61222BF78E260001BBCF;
+					};
+				};
+			};
+			buildConfigurationList = FF2F611E2BF78E260001BBCF /* Build configuration list for PBXProject "Parksbourg" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF2F611A2BF78E260001BBCF;
+			productRefGroup = FF2F61242BF78E260001BBCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF2F61222BF78E260001BBCF /* Parksbourg */,
+				FF2F61322BF78E290001BBCF /* ParksbourgTests */,
+				FF2F613C2BF78E290001BBCF /* ParksbourgUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF2F61212BF78E260001BBCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF2F612E2BF78E290001BBCF /* Preview Assets.xcassets in Resources */,
+				FF2F612B2BF78E290001BBCF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF2F61312BF78E290001BBCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF2F613B2BF78E290001BBCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF2F611F2BF78E260001BBCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF2F61292BF78E260001BBCF /* ContentView.swift in Sources */,
+				FF2F61272BF78E260001BBCF /* ParksbourgApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF2F612F2BF78E290001BBCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF2F61382BF78E290001BBCF /* ParksbourgTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF2F61392BF78E290001BBCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF2F61442BF78E290001BBCF /* ParksbourgUITestsLaunchTests.swift in Sources */,
+				FF2F61422BF78E290001BBCF /* ParksbourgUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF2F61352BF78E290001BBCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF2F61222BF78E260001BBCF /* Parksbourg */;
+			targetProxy = FF2F61342BF78E290001BBCF /* PBXContainerItemProxy */;
+		};
+		FF2F613F2BF78E290001BBCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF2F61222BF78E260001BBCF /* Parksbourg */;
+			targetProxy = FF2F613E2BF78E290001BBCF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FF2F61452BF78E290001BBCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF2F61462BF78E290001BBCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF2F61482BF78E290001BBCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Parksbourg/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = quentin.leon.Parksbourg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF2F61492BF78E290001BBCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Parksbourg/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = quentin.leon.Parksbourg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF2F614B2BF78E290001BBCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = quentin.leon.ParksbourgTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Parksbourg.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Parksbourg";
+			};
+			name = Debug;
+		};
+		FF2F614C2BF78E290001BBCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = quentin.leon.ParksbourgTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Parksbourg.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Parksbourg";
+			};
+			name = Release;
+		};
+		FF2F614E2BF78E290001BBCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = quentin.leon.ParksbourgUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Parksbourg;
+			};
+			name = Debug;
+		};
+		FF2F614F2BF78E290001BBCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = quentin.leon.ParksbourgUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Parksbourg;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF2F611E2BF78E260001BBCF /* Build configuration list for PBXProject "Parksbourg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF2F61452BF78E290001BBCF /* Debug */,
+				FF2F61462BF78E290001BBCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF2F61472BF78E290001BBCF /* Build configuration list for PBXNativeTarget "Parksbourg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF2F61482BF78E290001BBCF /* Debug */,
+				FF2F61492BF78E290001BBCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF2F614A2BF78E290001BBCF /* Build configuration list for PBXNativeTarget "ParksbourgTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF2F614B2BF78E290001BBCF /* Debug */,
+				FF2F614C2BF78E290001BBCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF2F614D2BF78E290001BBCF /* Build configuration list for PBXNativeTarget "ParksbourgUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF2F614E2BF78E290001BBCF /* Debug */,
+				FF2F614F2BF78E290001BBCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF2F611B2BF78E260001BBCF /* Project object */;
+}
