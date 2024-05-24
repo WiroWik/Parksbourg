@@ -17,7 +17,7 @@ struct Parking : Decodable {
     let etat_descriptif : String
     let total : Int
     let libre : Int
-    let infousager : Int
+    let infousager : Int?
     let realtimestatus : String
     let infoappli : String
 }
@@ -37,7 +37,7 @@ struct ParkingIdentifiable : Identifiable {
     let etat_descriptif : String
     let total : Int
     let libre : Int
-    let infousager : Int
+    let infousager : Int?
     let realtimestatus : String
     let infoappli : String
 }
@@ -60,7 +60,7 @@ class ParkingViewModel: ObservableObject {
                         index += 1
                     }
                 case .failure(let error):
-                    print("Erreur : \(error.localizedDescription)")
+                    print("Erreur : \(error)")
                 }
         }
     }

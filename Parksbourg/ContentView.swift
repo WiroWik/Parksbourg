@@ -8,54 +8,28 @@
 import SwiftUI
 import Alamofire
 
-struct DecodableType: Decodable {
-    let total_count: Int
-    let results: [[String : String?]]
-                                                
-    /*
-    let city: String
-    let friendyurl: String
-    let districtcode: String
-    let description: String
-    let address: String
-    let types: String
-    let name: String
-    let position: [String : Float]
-    let idsurfs: String
-    let zipcode: String
-    let citycode: String
-    let schedulelinkname: String
-    let accessfordeficient: Int
-    let accessforelder: Int
-    let street: String
-    let accessforwheelchair: Int
-    let accessfordeaf: Int
-    let normalizedalias: String
-    let accessforblind: Int
-    let schedulelinkurl: String
-    let hasurlschedule: Int
-     */
+enum ColorStatus : String {
+    case GREEN = "GREEN"
+    case ORANGE = "ORANGE"
+    case RED = "RED"
+    case BLUE = "BLUE"
 }
 
-
-
-/*public class Parking {
-    var id : Int
-    var name : String
-    var description : String
-    var address : String
-    var position : [String : Float]
-    
-    init(id: Int, name: String, description: String, address: String, position: [String : Float]) {
-        self.id = id
-        self.name = name
-        self.description = description
-        self.address = address
-        self.position = position
+func getStatusColor(color : String) -> Color {
+    switch color {
+        case ColorStatus.GREEN.rawValue:
+                return Color.green
+                
+        case ColorStatus.ORANGE.rawValue:
+                return Color.orange
+        case ColorStatus.RED.rawValue:
+                return Color.red
+        case ColorStatus.BLUE.rawValue:
+                return Color.blue
+        default:
+            return Color.gray
     }
-}*/
-
-
+}
 
 struct ContentView: View {
     @ObservedObject var viewModel: ParkingViewModel
@@ -68,19 +42,29 @@ struct ContentView: View {
             Text("Parksbourg")
             NavigationView {
                 List(viewModel.parkingList) { parking in
+                    let colorStatus : Color = getStatusColor(color : parking.realtimestatus)
+                    
                     VStack(alignment: .leading) {
                         Text(parking.nom_parking)
-                        Text("Etat : \(parking.realtimestatus)").font(.subheadline)
+                            .offset(x : 20)
+                            .overlay(alignment: .leading) {
+                                Image(systemName:"circle.fill").resizable().foregroundColor(colorStatus)
+                                    .frame(width: 10.0, height: 10.0)
+                                    
+                                }
+                        Text("\(parking.libre) / \(parking.total)")
                     }
                 }
+            }
                 .navigationTitle("Liste des Parkings")
                 .onAppear {
                     viewModel.fetchData()
                 }
-            }
         }
     }
+    
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
