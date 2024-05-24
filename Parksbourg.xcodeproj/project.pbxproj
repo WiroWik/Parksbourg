@@ -16,6 +16,8 @@
 		FF2F61422BF78E290001BBCF /* ParksbourgUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F61412BF78E290001BBCF /* ParksbourgUITests.swift */; };
 		FF2F61442BF78E290001BBCF /* ParksbourgUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F61432BF78E290001BBCF /* ParksbourgUITestsLaunchTests.swift */; };
 		FF2F61522BF790170001BBCF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FF2F61512BF790170001BBCF /* Alamofire */; };
+		FFB9B1632C00BC730026F4E1 /* ParkingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9B1622C00BC730026F4E1 /* ParkingDetailViewController.swift */; };
+		FFB9B1652C00C3710026F4E1 /* ParkingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9B1642C00C3710026F4E1 /* ParkingDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		FF2F613D2BF78E290001BBCF /* ParksbourgUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParksbourgUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF2F61412BF78E290001BBCF /* ParksbourgUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksbourgUITests.swift; sourceTree = "<group>"; };
 		FF2F61432BF78E290001BBCF /* ParksbourgUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksbourgUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FFB9B1622C00BC730026F4E1 /* ParkingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingDetailViewController.swift; sourceTree = "<group>"; };
+		FFB9B1642C00C3710026F4E1 /* ParkingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				FF2F612A2BF78E290001BBCF /* Assets.xcassets */,
 				FF2F612C2BF78E290001BBCF /* Preview Content */,
 				FF093B292C007F9F00432EFA /* ParkingViewController.swift */,
+				FFB9B1622C00BC730026F4E1 /* ParkingDetailViewController.swift */,
+				FFB9B1642C00C3710026F4E1 /* ParkingDetailView.swift */,
 			);
 			path = Parksbourg;
 			sourceTree = "<group>";
@@ -268,8 +274,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFB9B1652C00C3710026F4E1 /* ParkingDetailView.swift in Sources */,
 				FF093B2A2C007F9F00432EFA /* ParkingViewController.swift in Sources */,
 				FF2F61292BF78E260001BBCF /* ContentView.swift in Sources */,
+				FFB9B1632C00BC730026F4E1 /* ParkingDetailViewController.swift in Sources */,
 				FF2F61272BF78E260001BBCF /* ParksbourgApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

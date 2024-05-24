@@ -43,16 +43,17 @@ struct ContentView: View {
             NavigationView {
                 List(viewModel.parkingList) { parking in
                     let colorStatus : Color = getStatusColor(color : parking.realtimestatus)
-                    
-                    VStack(alignment: .leading) {
-                        Text(parking.nom_parking)
-                            .offset(x : 20)
-                            .overlay(alignment: .leading) {
-                                Image(systemName:"circle.fill").resizable().foregroundColor(colorStatus)
-                                    .frame(width: 10.0, height: 10.0)
+                    NavigationLink(destination: ParkingDetailView()) {
+                        VStack(alignment: .leading) {
+                            Text(parking.nom_parking)
+                                .offset(x : 20)
+                                .overlay(alignment: .leading) {
+                                    Image(systemName:"circle.fill").resizable().foregroundColor(colorStatus)
+                                        .frame(width: 10.0, height: 10.0)
                                     
                                 }
-                        Text("\(parking.libre) / \(parking.total)")
+                            Text("\(parking.libre) places libres").font(.subheadline).foregroundColor(.gray)
+                        }
                     }
                 }
             }
