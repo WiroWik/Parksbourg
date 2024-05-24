@@ -10,9 +10,9 @@ import Alamofire
 import SwiftUI
 
 struct ParkingDetail : Decodable {
-    let city : String
+    let city : String?
     let friendlyurl : String
-    let districtcode : String
+    let districtcode : String?
     let description : String
     let address : String
     let types : String
@@ -38,32 +38,6 @@ struct ParkingDetailResponse : Decodable {
     let results : [ParkingDetail]
 }
 
-struct ParkingDetailIdentifiable : Identifiable {
-    let id : Int
-    
-    let city : String
-    let friendlyurl : String
-    let districtcode : String
-    let description : String
-    let address : String
-    let types : String
-    let name : String
-    let position : [String : Float]
-    let idsurfs : String
-    let zipcode : String
-    let citycode : String
-    let schedulelinkname : String
-    let accessfordeficient : Int
-    let accessforelder : Int
-    let street : String
-    let accessforwheelchair : Int
-    let accessfordeaf : Int
-    let normalizedalias : String
-    let accessforblind : Int
-    let schedulelinkurl : String
-    let hasurlschedule : Int
-}
-
 class ParkingDetailViewModel: ObservableObject {
     @Published var parking_data : ParkingDetail?
     
@@ -77,7 +51,6 @@ class ParkingDetailViewModel: ObservableObject {
                 case .success(let parkingResponse):
                     let parkings = parkingResponse.results
                     self.parking_data = parkings[0]
-                    print(self.parking_data)
                     
                 case .failure(let error):
                     print("Erreur : \(error)")
