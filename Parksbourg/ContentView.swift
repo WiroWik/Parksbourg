@@ -68,7 +68,10 @@ struct ContentView: View {
             Text("Parksbourg")
             NavigationView {
                 List(viewModel.parkingList) { parking in
-                    Text(parking.nom_parking)
+                    VStack {
+                        Text(parking.nom_parking)
+                        Text("Etat : \(parking.realtimestatus)").font(.subheadline)
+                    }
                 }
                 .navigationTitle("Liste des Parkings")
                 .onAppear {
