@@ -31,8 +31,15 @@ struct ParkingDetailView : View {
             NavigationView {
                 VStack(alignment: .leading) {
                     Text(parking_data.street).font(.title3)
+                        .offset(x : 30)
+                        .overlay(alignment: .leading) {
+                            Image(systemName:"location").resizable().foregroundColor(.accentColor)
+                            .frame(width: 20.0, height: 20.0)
+                            
+                        }
+                    Divider()
                     Text(parking_data.description).font(.body)
-                    
+                    Divider()
                     HStack {
                         Image(systemName : "person.circle")
                             .imageScale(.large)
@@ -47,14 +54,15 @@ struct ParkingDetailView : View {
                             .imageScale(.large)
                             .foregroundColor(accessColor(hasAccess: parking_data.accessforblind))
                     }
+                    Spacer()
                     
-                }.padding(6)
+                }.padding(20)
             }
             .navigationTitle(parking_data.name)
             .onAppear {
                 detailViewModel.fetchData(parking_id: self.parking_id)
             }
-        }
+        }.frame(maxWidth: .infinity)
     }
 }
 
