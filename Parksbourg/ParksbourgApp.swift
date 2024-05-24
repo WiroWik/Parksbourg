@@ -11,7 +11,7 @@ import SwiftUI
 struct ParksbourgApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: ParkingViewModel())
         }
     }
 }

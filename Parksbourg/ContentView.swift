@@ -10,7 +10,7 @@ import Alamofire
 
 struct DecodableType: Decodable {
     let total_count: Int
-    let results: [[String : AnyObject]]
+    let results: [[String : String?]]
                                                 
     /*
     let city: String
@@ -39,7 +39,7 @@ struct DecodableType: Decodable {
 
 
 
-public class Parking {
+/*public class Parking {
     var id : Int
     var name : String
     var description : String
@@ -53,40 +53,34 @@ public class Parking {
         self.address = address
         self.position = position
     }
-    
-    static func populate() -> [Parking] {
-        var parkingList = [Parking]()
-        AF.request("https://data.strasbourg.eu/api/explore/v2.1/catalog/datasets/parkings/records?limit=32", method: .get).responseDecodable(of: DecodableType.self) { response in
-                print(response)
-        }
-        
-        return parkingList
-    }
-}
-
+}*/
 
 
 
 struct ContentView: View {
-    var parkingList : [Parking] = Parking.populate()
+    @ObservedObject var viewModel: ParkingViewModel
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Parksbourg")
-            List(parkingList, id: \.id) { parking in
-                VStack {
-                    Text(parking.name)
+            NavigationView {
+                List(viewModel.parkingList) { parking in
+                    Text(parking.nom_parking)
+                }
+                .navigationTitle("Liste des Parkings")
+                .onAppear {
+                    viewModel.fetchData()
                 }
             }
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(viewModel: ParkingViewModel())
     }
 }
