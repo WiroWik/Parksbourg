@@ -69,7 +69,7 @@ class ParkingDetailViewModel: ObservableObject {
     
     
     func fetchData(parking_id : String) {
-        let urlString = "https://data.strasbourg.eu/api/explore/v2.1/catalog/datasets/parkings/records?where=idsurfs%3D%\(parking_id)%22&limit=32"
+        let urlString = "https://data.strasbourg.eu/api/explore/v2.1/catalog/datasets/parkings/records?where=idsurfs%3D%22\(parking_id)%22&limit=32"
         AF.request(urlString)
             .validate() // Pour valider les réponses HTTP 200..<300 et les erreurs de contenu
             .responseDecodable(of: ParkingDetailResponse.self) { response in // Notez le type [User].self ici

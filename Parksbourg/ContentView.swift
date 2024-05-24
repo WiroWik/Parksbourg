@@ -43,7 +43,7 @@ struct ContentView: View {
             NavigationView {
                 List(viewModel.parkingList) { parking in
                     let colorStatus : Color = getStatusColor(color : parking.realtimestatus)
-                    NavigationLink(destination: ParkingDetailView(parking_id: parking.idsurfs)) {
+                    NavigationLink(destination: ParkingDetailView(parking_id: parking.idsurfs, detailViewModel: ParkingDetailViewModel())) {
                         VStack(alignment: .leading) {
                             Text(parking.nom_parking)
                                 .offset(x : 20)
