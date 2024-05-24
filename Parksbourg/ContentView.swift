@@ -68,7 +68,7 @@ struct ContentView: View {
             Text("Parksbourg")
             NavigationView {
                 List(viewModel.parkingList) { parking in
-                    VStack {
+                    VStack(alignment: .leading) {
                         Text(parking.nom_parking)
                         Text("Etat : \(parking.realtimestatus)").font(.subheadline)
                     }
