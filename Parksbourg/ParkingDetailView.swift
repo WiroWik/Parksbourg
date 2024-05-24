@@ -1,10 +1,3 @@
-//
-//  ParkingDetailView.swift
-//  Parksbourg
-//
-//  Created by Leon Le Berre on 5/24/24.
-//
-
 import Foundation
 import SwiftUI
 

@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  Parksbourg
-//
-//  Created by Leon Le Berre on 5/24/24.
-//
-
 import Foundation
 import Alamofire
 import SwiftUI
@@ -55,7 +48,6 @@ class ParkingViewModel: ObservableObject {
                     let parkings = parkingResponse.results
                     var index : Int = 0
                     for parking in parkings {
-                        print(parking)
                         self.parkingList.append(ParkingIdentifiable(id: index, nom_parking: parking.nom_parking, idsurfs: parking.idsurfs, ident: parking.ident, etat: parking.etat, etat_descriptif: parking.etat_descriptif, total: parking.total, libre: parking.libre, infousager: parking.infousager, realtimestatus: parking.realtimestatus, infoappli: parking.infoappli))
                         index += 1
                     }

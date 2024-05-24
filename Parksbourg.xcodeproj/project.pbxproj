@@ -18,6 +18,7 @@
 		FF2F61522BF790170001BBCF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FF2F61512BF790170001BBCF /* Alamofire */; };
 		FFB9B1632C00BC730026F4E1 /* ParkingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9B1622C00BC730026F4E1 /* ParkingDetailViewController.swift */; };
 		FFB9B1652C00C3710026F4E1 /* ParkingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9B1642C00C3710026F4E1 /* ParkingDetailView.swift */; };
+		FFB9B1672C00E3230026F4E1 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9B1662C00E3230026F4E1 /* LandingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		FF2F61432BF78E290001BBCF /* ParksbourgUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksbourgUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FFB9B1622C00BC730026F4E1 /* ParkingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingDetailViewController.swift; sourceTree = "<group>"; };
 		FFB9B1642C00C3710026F4E1 /* ParkingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingDetailView.swift; sourceTree = "<group>"; };
+		FFB9B1662C00E3230026F4E1 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				FF093B292C007F9F00432EFA /* ParkingViewController.swift */,
 				FFB9B1622C00BC730026F4E1 /* ParkingDetailViewController.swift */,
 				FFB9B1642C00C3710026F4E1 /* ParkingDetailView.swift */,
+				FFB9B1662C00E3230026F4E1 /* LandingView.swift */,
 			);
 			path = Parksbourg;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFB9B1672C00E3230026F4E1 /* LandingView.swift in Sources */,
 				FFB9B1652C00C3710026F4E1 /* ParkingDetailView.swift in Sources */,
 				FF093B2A2C007F9F00432EFA /* ParkingViewController.swift in Sources */,
 				FF2F61292BF78E260001BBCF /* ContentView.swift in Sources */,
