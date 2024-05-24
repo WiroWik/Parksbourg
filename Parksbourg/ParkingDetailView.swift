@@ -9,9 +9,14 @@ import Foundation
 import SwiftUI
 
 struct ParkingDetailView : View {
+    let parking_id : String
+   
+    init(parking_id : String) {
+        self.parking_id = parking_id
+    }
     var body : some View {
         VStack {
-            Text("TEST")
+            Text(self.parking_id)
         }
     }
 }
